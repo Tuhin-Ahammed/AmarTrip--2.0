@@ -1,8 +1,10 @@
-const swiper = new Swiper(".slider-wrapper", {
+const swiper = new Swiper(".mySwiper", {
   loop: true,
   grabCursor: true,
   spaceBetween: 30,
   autoplay: true,
+  centeredSlides: true,
+  slidesPerView: 3,
 
   // If we need pagination
   pagination: {
@@ -11,24 +13,18 @@ const swiper = new Swiper(".slider-wrapper", {
     dynamicBullets: true,
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
   //responsive breakpoints
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    620: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
+  // breakpoints: {
+  //   0: {
+  //     slidesPerView: 1,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //   },
+  //   1024: {
+  //     slidesPerView: 3,
+  //   },
+  // },
 });
 
 // Trogle button function start
@@ -37,8 +33,10 @@ const targetPassenger = document.getElementById("passenger");
 const targetDriver = document.getElementById("driver");
 
 // Get ALL buttons with these classes from both sections
-const passengerButtons = document.querySelectorAll(".button-1");
-const driverButtons = document.querySelectorAll(".button-2");
+const passengerButtons = document.querySelectorAll(".passenger-button");
+// console.table(passengerButtons);
+const driverButtons = document.querySelectorAll(".driver-button");
+// console.table(driverButtons);
 
 // Initially show passenger section and hide driver section
 targetPassenger.style.display = "block";
@@ -46,14 +44,14 @@ targetDriver.style.display = "none";
 
 // Function to show passenger section
 function showPassengerSection() {
-  targetPassenger.style.display = "block";
   targetDriver.style.display = "none";
+  targetPassenger.style.display = "block";
 
   // Add active class to all passenger buttons and remove from driver buttons
-  passengerButtons.forEach((btn) => btn.classList.add("active"));
   driverButtons.forEach((btn) => btn.classList.remove("active"));
+  passengerButtons.forEach((btn) => btn.classList.add("active"));
 
-  console.log("Passenger section activated");
+  // console.log("Passenger section activated");
 }
 
 // Function to show driver section
@@ -65,20 +63,14 @@ function showDriverSection() {
   driverButtons.forEach((btn) => btn.classList.add("active"));
   passengerButtons.forEach((btn) => btn.classList.remove("active"));
 
-  console.log("Driver section activated");
+  // console.log("Driver section activated");
 }
 
-// Add event listeners to all passenger buttons (button-1)
-passengerButtons.forEach((btn) => {
-  btn.onclick = showPassengerSection;
-});
+// Add event listeners to all passenger buttons (passengerButtons)
+passengerButtons.forEach((btn) => (btn.onclick = showPassengerSection));
 
-// Add event listeners to all driver buttons (button-2)
-driverButtons.forEach((btn) => {
-  btn.onclick = showDriverSection;
-});
+// Add event listeners to all driver buttons (driverButtons)
+driverButtons.forEach((btn) => (btn.onclick = showDriverSection));
 
 // Initialize with passenger section active
 showPassengerSection();
-
-// Trogle button function end
