@@ -278,12 +278,22 @@ body {
     margin-bottom: 20px;
 }
 
+#passenger-multi-key h1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #000000;
+
+}
+
 .multi-key-containt h1 {
     font-size: 20px;
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0%;
     color: #000000;
+    padding-top: 20px;
 }
 
 .passenger-multi-key1 .icon-manager {
@@ -297,14 +307,15 @@ body {
     align-content: center;
 }
 
-.multi-key-containt p {
-    font-size: 8px
+.passenger-multi-containt div>p {
+    font-size: 16px;
+    color: #6D6D6D;
 }
 
 /* passenger section end */
+
+
 /* driver section start */
-
-
 .driver-section .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -314,6 +325,22 @@ body {
 .driver-section .driver-image {
     padding-right: 30px;
 }
+
+#driver-logo-mobile {
+    display: none;
+}
+
+#driver-mobile-view {
+    display: none;
+}
+
+#driver-containt-mobile {
+    display: none;
+}
+
+
+
+
 
 .driver-section .driver-image img {
     width: calc(100% - 30px);
@@ -372,20 +399,19 @@ body {
     color: #333333;
 }
 
+#driver-multi-key h1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #000000;
+    padding-top: 10px;
+}
+
 
 /* footer section start */
 
-/* .footer-section .footer-containt {
-    display: flex;
-    background-color: #202939;
-    color: #FFFFFF;
-    margin-top: 60px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 108px;
-    padding-right: 108px;
-    justify-content: space-between;
-} */
+
 
 .footer-section .footer-containt {
     display: flex;
@@ -580,6 +606,7 @@ body {
         margin-right: 10px;
     }
 
+
     #driver-logo-mobile {
         display: block;
         width: 100%;
@@ -604,6 +631,32 @@ body {
         font-size: 18px;
     }
 
+
+
+    #passenger-multi-key .icon-manager {
+        height: 32px;
+        width: 32px;
+        border-radius: 8px;
+        padding-right: 10px;
+        padding-top: 0;
+        /* margin-top: 10px; */
+    }
+
+
+    #passenger-multi-key h1 {
+        font-size: 12px;
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    #passenger-multi-key p {
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
     .driver-button-section .driver-button {
         width: 99px;
         height: 27px;
@@ -612,22 +665,43 @@ body {
     }
 
 
-    .passenger-multi-key1 .icon-manager {
+    #driver-multi-key .icon-manager {
         height: 32px;
         width: 32px;
         border-radius: 8px;
         padding-right: 10px;
-        padding-top: 0;
-        margin-top: 10px;
+        padding-top: 0px;
     }
 
 
-
-
-
-    .multi-key-containt h1 {
+    #driver-multi-key h1 {
         font-size: 12px;
+        padding: 0;
+        margin: 0;
+    }
 
+    #driver-multi-key p {
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #driver-desktop-view {
+        display: none;
+    }
+
+    #driver-mobile-view {
+        display: block;
+        display: flex;
+    }
+
+    #driver-mobile-view h1 {
+        padding-top: 20px;
+    }
+
+    #driver-mobile-view .icon-manager {
+        height: 31px;
+        width: 31px;
     }
 
 
