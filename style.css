@@ -478,6 +478,15 @@ body {
         max-width: 100%;
     }
 
+    #amar-trip-logo {
+        width: 55px;
+        height: 20px;
+    }
+
+    #amar-trip-driver-logo {
+        width: 78px;
+        height: 20px;
+    }
 
     .navbar-section-right {
         display: none;
@@ -564,10 +573,11 @@ body {
     }
 
     .passenger-button-section .passenger-button {
-        width: 99px;
+        width: 97px;
         height: 27px;
         border-radius: 6px;
         border: 1px solid white;
+        margin-right: 10px;
     }
 
     #driver-logo-mobile {
@@ -595,7 +605,6 @@ body {
     }
 
     .driver-button-section .driver-button {
-        position: absolute;
         width: 99px;
         height: 27px;
         border-radius: 6px;
@@ -611,6 +620,10 @@ body {
         padding-top: 0;
         margin-top: 10px;
     }
+
+
+
+
 
     .multi-key-containt h1 {
         font-size: 12px;
