@@ -472,7 +472,7 @@ body {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600x) {
 
     img {
         max-width: 100%;
@@ -677,3 +677,4 @@ body {
     }
 
 }
+
