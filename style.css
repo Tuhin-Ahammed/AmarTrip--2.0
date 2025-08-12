@@ -25,7 +25,7 @@ body {
 .container .containt {
     display: flex;
     justify-content: space-between;
-background: #202939 url(amar_trip_landing_Page/img/BG-Banner.png) center no-repeat; 
+    background: #202939 url(/amar_trip_landing_Page-V6/amar_trip_landing_Page/img/BG-Banner.png) center no-repeat;
 }
 
 .navbar-section-left {
@@ -106,102 +106,57 @@ background: #202939 url(amar_trip_landing_Page/img/BG-Banner.png) center no-repe
     margin-bottom: -5px;
 }
 
-.container .swiper-containt {
-    text-align: center;
-    padding-top: 40px;
-}
-
-.container .swiper-containt h1 {
-    font-size: 46px;
-    font-style: medium;
-    font-weight: 500;
-    line-height: 130%;
-    letter-spacing: 0;
-    color: #333333;
-}
-
-.container .swiper-containt h3 {
-    font-size: 29px;
-    font-weight: 300;
-    font-style: light;
-    line-height: 130%;
-    letter-spacing: 0;
-    color: #333333;
-}
-
-.card-list .card-item {
-    color: wheat;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 8px;
-}
-
 
 /* Swiper code start */
 
-.swiper-section {
-    background: rgba(247, 251, 255, 1);
-    padding: 80px 0;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-wrapper {
-    align-items: center;
-    padding-top: 20px;
-}
-
-.swiper-slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 650px;
-}
-
-.swiper-slide.swiper-slide-active {
-    width: 600px !important;
-    height: 600px !important;
-}
-
-.swiper-slide img {
-    width: 80% !important;
-    height: 80% !important;
-    object-fit: fill;
-    border: 6px solid white;
-    border-radius: 40px;
-    box-shadow: 0px 12px 24px 0px rgba(16, 76, 139, 0.16);
-}
-
-/* Position pagination below the slider */
-.swiper-pagination {
-    position: relative !important;
-    /* make it sit below instead of over */
-    bottom: auto !important;
-    margin-top: 40px;
-    /* space from images */
+.slider-containt {
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-/* Make pagination dots yellow */
-.swiper-pagination-bullet {
-    background-color: rgba(205, 213, 223, 1) !important;
-    width: 14px !important;
-    height: 14px !important;
-    opacity: 1 !important;
+.slider-containt h2 {
+    font-size: 46px;
+    font-weight: 500;
+    color: #333333;
 }
 
-.swiper-pagination-bullet-active {
-    background-color: rgba(250, 197, 21, 1) !important;
+.slider-containt p {
+    font-size: 29px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    max-width: 90%;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.carousel img {
+    border-radius: 20px;
+    border: 2px solid rgb(233, 232, 232);
+    transition: transform 0.5s ease, width 0.5s ease;
+    height: auto;
+
+}
+
+.side {
+    width: 30%;
     opacity: 1;
-    width: 52px !important;
-    height: 14px !important;
-    border-radius: 40px !important;
+    transform: scale(0.8);
 }
+
+.center {
+    width: 40%;
+    opacity: 1;
+    transform: scale(1);
+}
+
 
 /* Swiper code end */
 
@@ -556,34 +511,17 @@ background: #202939 url(amar_trip_landing_Page/img/BG-Banner.png) center no-repe
 
     }
 
-    .swiper-section {
-        padding: 0px 0px;
-    }
-
-    .container .swiper-containt h1 {
+    .slider-containt h2 {
         font-size: 16px;
     }
 
-    .container .swiper-containt h3 {
+    .slider-containt p {
         font-size: 10px;
     }
 
-    .swiper-slide.swiper-slide-active {
-        width: 227px !important;
-        height: 227px !important;
+    .carousel {
+        margin-left: 13px;
     }
-
-    .swiper-pagination-bullet {
-        width: 5px !important;
-        height: 5px !important;
-    }
-
-    .swiper-pagination-bullet-active {
-        width: 18px !important;
-        height: 5px !important;
-        border-radius: 14px !important;
-    }
-
 
     .passenger-section-left img {
         display: none;
@@ -777,6 +715,3 @@ background: #202939 url(amar_trip_landing_Page/img/BG-Banner.png) center no-repe
     }
 
 }
-
-
-
