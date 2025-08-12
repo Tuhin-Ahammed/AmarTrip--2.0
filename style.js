@@ -1,31 +1,47 @@
-const swiper = new Swiper(".mySwiper", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 30,
-  autoplay: true,
-  centeredSlides: true,
-  slidesPerView: 3,
+// === Your Local Images Here ===
+const imageFiles = [
+  "img/commision-trip-logo.png",
+  "img/negotiation-trip-logo.png",
+  "img/commision-free-logo.png",
+];
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
+let currentIndex = 0;
+const carousel = document.getElementById("carousel");
 
-  //responsive breakpoints
-  // breakpoints: {
-  //   0: {
-  //     slidesPerView: 1,
-  //   },
-  //   768: {
-  //     slidesPerView: 2,
-  //   },
-  //   1024: {
-  //     slidesPerView: 3,
-  //   },
-  // },
-});
+function renderCarousel() {
+  carousel.innerHTML = "";
+
+  // Previous Image
+  const prevIndex = (currentIndex - 1 + imageFiles.length) % imageFiles.length;
+  const prevImg = document.createElement("img");
+  prevImg.src = imageFiles[prevIndex];
+  prevImg.classList.add("side");
+  carousel.appendChild(prevImg);
+
+  // Current Image (Bigger)
+  const currentImg = document.createElement("img");
+  currentImg.src = imageFiles[currentIndex];
+  currentImg.classList.add("center");
+  carousel.appendChild(currentImg);
+
+  // Next Image
+  const nextIndex = (currentIndex + 1) % imageFiles.length;
+  const nextImg = document.createElement("img");
+  nextImg.src = imageFiles[nextIndex];
+  nextImg.classList.add("side");
+  carousel.appendChild(nextImg);
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % imageFiles.length;
+  renderCarousel();
+}
+
+// Initial Render
+renderCarousel();
+
+// Auto Change Every 3s
+setInterval(nextImage, 3000);
 
 // Trogle button function start
 
