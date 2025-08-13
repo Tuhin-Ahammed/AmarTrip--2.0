@@ -25,7 +25,8 @@ body {
 .container .containt {
     display: flex;
     justify-content: space-between;
-    background: #202939 url(/img/BG-Banner.png) center no-repeat;
+    background-image: url(/img/BG-Banner.png) center non-repeat;
+    /* background: #202939 url(/img/BG-Banner.png) center no-repeat; */
 }
 
 .navbar-section-left {
