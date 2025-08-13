@@ -25,7 +25,7 @@ body {
 .container .containt {
     display: flex;
     justify-content: space-between;
-    background: #202939 url(/img/BG-Banner.png) center no-repeat;
+    background: #202939 url(amar_trip_landing_Page/img/BG-Banner.png) center no-repeat;
 }
 
 .navbar-section-left {
@@ -715,5 +715,6 @@ body {
     }
 
 }
+
 
 
