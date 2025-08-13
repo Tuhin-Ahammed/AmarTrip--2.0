@@ -130,7 +130,7 @@ body {
 .carousel {
     display: flex;
     align-items: center;
-    gap: 10px;
+/*     gap: 5px; */
     overflow: hidden;
     max-width: 90%;
     margin-bottom: 30px;
@@ -715,3 +715,4 @@ body {
     }
 
 }
+
