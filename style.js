@@ -1,47 +1,80 @@
-// === Your Local Images Here ===
-const imageFiles = [
-  "img/commision-trip-logo.png",
-  "img/negotiation-trip-logo.png",
-  "img/commision-free-logo.png",
-];
 
-let currentIndex = 0;
-const carousel = document.getElementById("carousel");
+    // === Your Local Images Here ===
+    const imageFiles = [
+      "img/commision-trip-logo.png",
+      "img/negotiation-trip-logo.png",
+      "img/commision-free-logo.png",
+      "img/commision-trip-logo.png",
+      "img/negotiation-trip-logo.png",
+      "img/commision-free-logo.png",
 
-function renderCarousel() {
-  carousel.innerHTML = "";
+    ];
 
-  // Previous Image
-  const prevIndex = (currentIndex - 1 + imageFiles.length) % imageFiles.length;
-  const prevImg = document.createElement("img");
-  prevImg.src = imageFiles[prevIndex];
-  prevImg.classList.add("side");
-  carousel.appendChild(prevImg);
+    let currentIndex = 0;
+    const carousel = document.getElementById('carousel');
 
-  // Current Image (Bigger)
-  const currentImg = document.createElement("img");
-  currentImg.src = imageFiles[currentIndex];
-  currentImg.classList.add("center");
-  carousel.appendChild(currentImg);
+  const pagination = document.getElementById('swiper-pagination');
 
-  // Next Image
-  const nextIndex = (currentIndex + 1) % imageFiles.length;
-  const nextImg = document.createElement("img");
-  nextImg.src = imageFiles[nextIndex];
-  nextImg.classList.add("side");
-  carousel.appendChild(nextImg);
-}
+  function renderPagination() {
+    pagination.innerHTML = '';
+    imageFiles.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (index === currentIndex) {
+        dot.classList.add('active');
+      }
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        renderCarousel();
+      });
+      pagination.appendChild(dot);
+    });
+  }
 
-function nextImage() {
-  currentIndex = (currentIndex + 1) % imageFiles.length;
-  renderCarousel();
-}
+    function renderCarousel() {
+      carousel.innerHTML = '';
 
-// Initial Render
-renderCarousel();
+      // Previous Image
+      const prevIndex = (currentIndex - 1 + imageFiles.length) % imageFiles.length;
+      const prevImg = document.createElement('img');
+      prevImg.src = imageFiles[prevIndex];
+      prevImg.classList.add('side');
+      carousel.appendChild(prevImg);
 
-// Auto Change Every 3s
-setInterval(nextImage, 3000);
+      // Current Image (Bigger)
+      const currentImg = document.createElement('img');
+      currentImg.src = imageFiles[currentIndex];
+      currentImg.classList.add('center');
+      carousel.appendChild(currentImg);
+    
+
+
+      // Next Image
+      const nextIndex = (currentIndex + 1) % imageFiles.length;
+      const nextImg = document.createElement('img');
+      nextImg.src = imageFiles[nextIndex];
+      nextImg.classList.add('side');
+      carousel.appendChild(nextImg);
+
+       renderPagination();
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % imageFiles.length;
+      renderCarousel();
+    }
+
+    // Initial Render
+    renderCarousel();
+
+    // Auto Change Every 3s
+    setInterval(nextImage, 3000);
+  
+
+
+
+
+
 
 // Trogle button function start
 
