@@ -25,7 +25,7 @@ body {
 .container .containt {
     display: flex;
     justify-content: space-between;
-    background: #202939 url(amar_trip_landing_Page/img/BG-Banner.png) center no-repeat;
+    background: #202939 url(/img/BG-Banner.png) center no-repeat;
 }
 
 .navbar-section-left {
@@ -130,7 +130,7 @@ body {
 .carousel {
     display: flex;
     align-items: center;
-/*     gap: 5px; */
+    gap: 10px;
     overflow: hidden;
     max-width: 90%;
     margin-bottom: 30px;
@@ -142,7 +142,6 @@ body {
     border: 2px solid rgb(233, 232, 232);
     transition: transform 0.5s ease, width 0.5s ease;
     height: auto;
-
 }
 
 .side {
@@ -156,6 +155,32 @@ body {
     opacity: 1;
     transform: scale(1);
 }
+
+    .swiper-containt{
+    display: flex-column;
+    }
+    #swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 6px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .dot.active {
+    background-color: #EAAA08;
+    width: 40px;
+    height: 10px;
+    border-radius: 20px;
+  }
+
+
 
 
 /* Swiper code end */
@@ -520,11 +545,14 @@ body {
     }
 
     .carousel {
-        margin-left: 13px;
+        margin-left: 12px;
     }
+
+    /* carousel section end */
 
     .passenger-section-left img {
         display: none;
+        padding: 5px;
     }
 
     #passenger-logo-mobile {
@@ -715,6 +743,3 @@ body {
     }
 
 }
-
-
-
