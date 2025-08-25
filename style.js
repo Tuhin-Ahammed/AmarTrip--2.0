@@ -1,12 +1,19 @@
 
     // === Your Local Images Here ===
     const imageFiles = [
-      "img/commision-trip-logo.png",
-      "img/negotiation-trip-logo.png",
-      "img/commision-free-logo.png",
-      "img/commision-trip-logo.png",
-      "img/negotiation-trip-logo.png",
-      "img/commision-free-logo.png",
+      // "img/commision-trip-logo.png",
+      // "img/negotiation-trip-logo.png",
+      // "img/commision-free-logo.png",
+      // "img/commision-trip-logo.png",
+      // "img/negotiation-trip-logo.png",
+      // "img/commision-free-logo.png",
+"https://s3.brilliant.com.bd/s3.volume9.com/cms/passenger/2b638bb684b47f0d8b591cc956aa646a",
+"https://s3.brilliant.com.bd/s3.volume9.com/cms/passenger/1da7e09b610543eb51c266e84f613dcb",
+"https://s3.brilliant.com.bd/s3.volume9.com/cms/passenger/78a5bd06c5c5d6ddc78b2f4d6e9db6ad",
+"https://s3.brilliant.com.bd/s3.volume9.com/cms/passenger/07f5f58031e355def437faaacc249a9d",
+"https://s3.brilliant.com.bd/s3.volume9.com/cms/passenger/2a463c71c57d09b927d0168ee05fef5d",
+"https://s3.brilliant.com.bd/s3.volume9.com/cms/passenger/1e4b566396c6b9ab201371a9e23033fb",
+
 
     ];
 
