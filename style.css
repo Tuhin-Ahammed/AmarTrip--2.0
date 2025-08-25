@@ -166,8 +166,8 @@ body {
     gap: 6px;
   }
   .dot {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: #bbb;
     border-radius: 50%;
     cursor: pointer;
@@ -175,8 +175,8 @@ body {
   }
   .dot.active {
     background-color: #EAAA08;
-    width: 30px;
-    height: 5px;
+    width: 40px;
+    height: 10px;
     border-radius: 20px;
   }
 
@@ -547,6 +547,19 @@ body {
     .carousel {
         margin-left: 12px;
     }
+
+ .dot {
+    width: 5px;
+    height: 5px;
+  }
+  .dot.active {
+    width: 30px;
+    height: 5px;
+  }
+
+
+
+
 
     /* carousel section end */
 
