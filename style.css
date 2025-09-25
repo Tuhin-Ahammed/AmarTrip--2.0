@@ -1,20 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
 .container {
-    width: 100%;
-    /* max-width: 1440px; */
-    margin: 0 auto;
+  width: 100%;
+  /* max-width: 1440px; */
+  margin: 0 auto;
 
 }
 
@@ -23,162 +23,212 @@ body {
 } */
 
 .container .containt {
-    display: flex;
-    justify-content: space-between;
-    background: #202939 url(img/BG-Banner.png) center no-repeat;
+  display: flex;
+  justify-content: space-between;
+  background: #202939 url(img/BG-Banner.png) center no-repeat;
 }
 
 .navbar-section-left {
-    padding-top: 21px;
-    padding-left: 63px;
+  padding-top: 21px;
+  padding-left: 63px;
 }
 
 .navbar-section-left .navbar-logo img {
-    width: auto;
-    height: auto;
-    margin-right: 20px;
-    cursor: pointer;
+  width: auto;
+  height: auto;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 .containt .navbar-section-right img {
-    width: 628px;
-    height: 565px;
+  width: 628px;
+  height: 565px;
 }
 
 .navbar-section-left .navbar-containt h2 {
-    color: #FFFFFF;
-    font-size: 80px;
-    font-weight: 600;
-    letter-spacing: 0px;
-    line-height: 100%;
-    margin-top: 52px;
-    margin-bottom: 50px;
+  color: #FFFFFF;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 100%;
+  margin-top: 52px;
+  margin-bottom: 50px;
 }
 
 .letter-high-light {
-    color: #FAC515;
-    position: relative;
+  color: #FAC515;
+  position: relative;
 }
 
 .letter-high-light::after {
-    content: url(./img/easily.svg);
-    position: absolute;
-    top: 50%;
-    left: 6px;
+  content: url(./img/easily.svg);
+  position: absolute;
+  top: 50%;
+  left: 6px;
 }
 
 .letter-high-light-driver {
-    color: #EAAA08;
-    font-size: 30px;
-    font-weight: 600;
-    font-style: semiBold;
-    line-height: 150%;
+  color: #EAAA08;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: semiBold;
+  line-height: 150%;
 }
 
 .navbar-section-left .navbar-containt p {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0;
-    color: #FFFFFF;
-    margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+#navbar-containt-mobile {
+  display: none;
 }
 
 .navbar-section-left .navbar-store img {
-    width: 220px;
-    height: 57px;
+  width: 220px;
+  height: 57px;
+  position: relative;
 }
 
 .navbar-section-left .navbar-store img:hover {
-    border: 1px solid #080808;
-    border-radius: 15px;
+  border: 1px solid transparent;
 }
 
 .navbar-section-left .navbar-store {
-    padding-bottom: 62px;
-    cursor: pointer;
+  padding-bottom: 62px;
+  cursor: pointer;
+  display: flex;
+}
+
+.app-link-google {
+  display: flex;
+}
+
+.app-link-google .passenger-link button {
+  width: 109px;
+  height: 40px;
+  background-color: #FAC515;
+  color: #364152;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0px 0px 0px 5px;
+  border: transparent;
+  margin-top: -5px;
+  margin-left: 1px;
+}
+
+.app-link-google .driver-link button {
+  width: 108px;
+  height: 40px;
+  color: #FFFFFF;
+  background-color: #364152;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 0px 5px 0px;
+  border: transparent;
+  margin-top: -4px;
+
+}
+
+.app-link-apple .passenger-link button {
+  width: 214px;
+  height: 40px;
+  color: #FFFFFF;
+  background-color: #364152;
+  cursor: pointer;
+  border-radius: 0px 0px 5px 5px;
+  border: transparent;
+  margin-top: -4px;
+  margin-left: 2px;
 }
 
 .containt .navbar-section-right img {
-    width: 100%;
-    height: auto;
-    padding-top: 65px;
-    margin-bottom: -5px;
+  width: 100%;
+  height: auto;
+  padding-top: 65px;
+  margin-bottom: -4px;
 }
 
 
 /* Swiper code start */
 
 .slider-containt {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .slider-containt h2 {
-    font-size: 46px;
-    font-weight: 500;
-    color: #333333;
+  font-size: 46px;
+  font-weight: 500;
+  color: #333333;
 }
 
 .slider-containt p {
-    font-size: 29px;
-    font-weight: 300;
-    color: #333333;
+  font-size: 29px;
+  font-weight: 300;
+  color: #333333;
 }
 
 .carousel {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    overflow: hidden;
-    max-width: 90%;
-    margin-bottom: 30px;
-    margin-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  max-width: 90%;
+  margin-bottom: 30px;
+  margin-left: 50px;
 }
 
 .carousel img {
-    border-radius: 20px;
-    border: 2px solid rgb(233, 232, 232);
-    transition: transform 0.5s ease, width 0.5s ease;
-    height: auto;
+  border-radius: 20px;
+  border: 2px solid rgb(233, 232, 232);
+  transition: transform 0.5s ease, width 0.5s ease;
+  height: auto;
 }
 
 .side {
-    width: 30%;
-    opacity: 1;
-    transform: scale(0.8);
+  width: 30%;
+  opacity: 1;
+  transform: scale(0.8);
 }
 
 .center {
-    width: 40%;
-    opacity: 1;
-    transform: scale(1);
+  width: 40%;
+  opacity: 1;
+  transform: scale(1);
 }
 
-    .swiper-containt{
-    display: flex-column;
-    }
-    #swiper-pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 6px;
-  }
-  .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .dot.active {
-    background-color: #EAAA08;
-    width: 40px;
-    height: 10px;
-    border-radius: 20px;
-  }
+.swiper-containt {
+  display: flex-column;
+}
+
+#swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #EAAA08;
+  width: 40px;
+  height: 10px;
+  border-radius: 20px;
+}
 
 
 
@@ -188,108 +238,108 @@ body {
 /* passenger section start */
 
 .passenger-section .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 60px;
 }
 
 #passenger-logo-mobile {
-    display: none;
+  display: none;
 }
 
 .passenger-section-left .passenger-section-right {
-    margin-right: 100px;
+  margin-right: 100px;
 }
 
 .passenger-button-section .passenger-button {
-    background-color: #FAC515;
-    width: 226px;
-    height: 65px;
-    border-radius: 16px;
-    border: 1px solid white;
-    gap: 85px;
-    margin-right: 26px;
-    cursor: pointer;
+  background-color: #FAC515;
+  width: 226px;
+  height: 65px;
+  border-radius: 16px;
+  border: 1px solid white;
+  gap: 85px;
+  margin-right: 26px;
+  cursor: pointer;
 }
 
 
 .passenger-button-section .driver-button {
-    background-color: #EEF2F6;
-    color: #364152;
-    width: 226px;
-    height: 65px;
-    border-radius: 16px;
-    border: 1px solid white;
-    gap: 85px;
-    cursor: pointer;
+  background-color: #EEF2F6;
+  color: #364152;
+  width: 226px;
+  height: 65px;
+  border-radius: 16px;
+  border: 1px solid white;
+  gap: 85px;
+  cursor: pointer;
 }
 
 .passenger-button-section h2 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0;
-    color: #364152;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #364152;
 }
 
 .passenger-button-section .driver-button:hover {
-    background-color: #16B364;
-    color: rgba(255, 255, 255, 1);
+  background-color: #16B364;
+  color: rgba(255, 255, 255, 1);
 }
 
 .passenger-button-section .driver-button:hover>h2 {
-    background-color: #16B364;
-    color: rgba(255, 255, 255, 1);
+  background-color: #16B364;
+  color: rgba(255, 255, 255, 1);
 }
 
 
 .passenger-header-containt h2 {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 38px;
-    font-weight: 500;
-    line-height: 130%;
-    letter-spacing: 0%;
-    color: #333333;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #333333;
 }
 
 .passenger-multi-key1 {
-    display: flex;
-    margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 #passenger-multi-key h1 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0%;
-    color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #000000;
 
 }
 
 .multi-key-containt h1 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0%;
-    color: #000000;
-    padding-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #000000;
+  padding-top: 20px;
 }
 
 .passenger-multi-key1 .icon-manager {
-    height: 60px;
-    width: 60px;
-    border-radius: 16px;
-    background-color: #ECF5FF;
-    margin-right: 20px;
-    margin-top: 20px;
-    text-align: center;
-    align-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 16px;
+  background-color: #ECF5FF;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: center;
+  align-content: center;
 }
 
 .passenger-multi-containt div>p {
-    font-size: 16px;
-    color: #6D6D6D;
+  font-size: 16px;
+  color: #6D6D6D;
 }
 
 /* passenger section end */
@@ -297,95 +347,83 @@ body {
 
 /* driver section start */
 .driver-section .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 60px;
 }
 
 .driver-section .driver-image {
-    padding-right: 30px;
+  padding-right: 30px;
 }
 
 #driver-logo-mobile {
-    display: none;
+  display: none;
 }
-
-#driver-mobile-view {
-    display: none;
-}
-
-#driver-containt-mobile {
-    display: none;
-}
-
-
-
-
 
 .driver-section .driver-image img {
-    width: calc(100% - 30px);
+  width: calc(100% - 30px);
 }
 
 .driver-button-section .passenger-button,
 .passenger-button-section .driver-button {
-    background-color: #EEF2F6;
-    width: 226px;
-    height: 65px;
-    border-radius: 16px;
-    border: 1px solid white;
-    gap: 85px;
-    margin-right: 26px;
-    cursor: pointer;
-    color: #364152;
+  background-color: #EEF2F6;
+  width: 226px;
+  height: 65px;
+  border-radius: 16px;
+  border: 1px solid white;
+  gap: 85px;
+  margin-right: 26px;
+  cursor: pointer;
+  color: #364152;
 }
 
 .driver-button-section .passenger-button:hover {
-    background-color: #FAC515;
+  background-color: #FAC515;
 }
 
 .driver-button-section .driver-button {
-    background-color: #16B364;
-    color: rgba(255, 255, 255, 1);
-    width: 226px;
-    height: 65px;
-    border-radius: 16px;
-    border: 1px solid white;
-    gap: 85px;
-    cursor: pointer;
+  background-color: #16B364;
+  color: rgba(255, 255, 255, 1);
+  width: 226px;
+  height: 65px;
+  border-radius: 16px;
+  border: 1px solid white;
+  gap: 85px;
+  cursor: pointer;
 }
 
 
 .passenger-button-section h2,
 .driver-button-section h2 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0;
-    color: #364152;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #364152;
 }
 
 .passenger-button-section .driver-button.active h2,
 .driver-button-section .driver-button.active h2 {
-    color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .passenger-header-containt h2 {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 38px;
-    font-weight: 500;
-    line-height: 130%;
-    letter-spacing: 0%;
-    color: #333333;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #333333;
 }
 
 #driver-multi-key h1 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0%;
-    color: #000000;
-    padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #000000;
+  padding-top: 10px;
 }
 
 
@@ -394,57 +432,57 @@ body {
 
 
 .footer-section .footer-containt {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #202939;
-    color: #FFFFFF;
-    margin-top: 60px;
-    padding: 40px 108px;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #202939;
+  color: #FFFFFF;
+  margin-top: 60px;
+  padding: 40px 108px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .footer-containt-2,
 .footer-containt-3,
 .footer-containt-4 {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
 }
 
 .social-link {
-    font-size: 25px;
-    cursor: pointer;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .social-link i:hover {
-    border: 2px solid #EAAA08;
-    border-radius: 10px;
+  border: 2px solid #EAAA08;
+  border-radius: 10px;
 
 }
 
 .copyright-section {
-    background-color: #222c3b;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 150%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 110px;
-    border-top: 1px solid rgb(105, 104, 104);
+  background-color: #222c3b;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 110px;
+  border-top: 1px solid rgb(105, 104, 104);
 }
 
 
 .footer-mobile {
-    display: none;
+  display: none;
 }
 
 .passenger-button-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 
@@ -452,106 +490,135 @@ body {
 
 @media only screen and (max-width: 1023px) {
 
-    .swiper-slide.swiper-slide-active {
-        width: 450px !important;
-        height: 450px !important;
-    }
+  .swiper-slide.swiper-slide-active {
+    width: 450px !important;
+    height: 450px !important;
+  }
 
-    .passenger-section .container,
-    .driver-section .container {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        padding: 60px;
-    }
+  .passenger-section .container,
+  .driver-section .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+  }
 
-    .passenger-section-right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .passenger-section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .passenger-section-right {
-        margin-right: inherit;
-    }
+  .passenger-section-right {
+    margin-right: inherit;
+  }
 }
 
 
 @media only screen and (max-width: 767px) {
 
-    img {
-        max-width: 100%;
-    }
+  img {
+    max-width: 100%;
+  }
 
-    #amar-trip-logo {
-        width: 55px;
-        height: 20px;
-    }
+  #amar-trip-logo {
+    width: 55px;
+    height: 20px;
+  }
 
-    #amar-trip-driver-logo {
-        width: 78px;
-        height: 20px;
-    }
+  #amar-trip-driver-logo {
+    width: 78px;
+    height: 20px;
+  }
 
-    .navbar-section-right {
-        display: none;
-    }
+  .navbar-section-right {
+    display: none;
+  }
 
-    .navbar-section-left {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 30px;
-    }
+  .navbar-section-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+  }
 
-    .navbar-section-left .navbar-containt h2 {
-        font-size: 40px;
-    }
+  .navbar-section-left .navbar-containt h2 {
+    font-size: 40px;
+    text-align: center;
+  }
 
-    .letter-high-light::after {
-        content: url(./img/easily-mobile.svg);
-        position: absolut;
-        top: 50%;
-        left: 6px;
-    }
+  .letter-high-light::after {
+    content: url(./img/easily-mobile.svg);
+    position: absolut;
+    top: 50%;
+    left: 6px;
+  }
 
-    .navbar-section-left .navbar-containt p {
-        font-size: 12px;
-        width: 400;
-        line-height: 150%;
-    }
+  .navbar-section-left .navbar-containt p {
+    font-size: 12px;
+    width: 400;
+    line-height: 150%;
+    text-align: center;
+  }
 
-    .navbar-section-left .navbar-store img {
-        width: 112px;
-        height: 29px;
+  #navbar-containt-desktop {
+    display: none;
+  }
 
-    }
+  #navbar-containt-mobile {
+    display: block;
+  }
 
-    .navbar-section-left .navbar-store {
-        margin-top: 15px;
-        margin-bottom: 0;
-        padding-bottom: 0;
+  .navbar-section-left .navbar-store img {
+    width: 112px;
+    height: 29px;
+  }
 
-    }
+  .navbar-section-left .navbar-store {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
-    .slider-containt h2 {
-        font-size: 16px;
-    }
+  .app-link-google .passenger-link button {
+    width: 54px;
+    height: 22px;
+    font-size: 8.8px;
+  }
 
-    .slider-containt p {
-        font-size: 10px;
-    }
+  .app-link-google .driver-link button {
+    width: 54px;
+    height: 22px;
+    font-size: 8.8px;
+  }
 
-    .carousel {
-        margin-left: 12px;
-    }
+  .app-link-apple .passenger-link button {
+    width: 110px;
+    height: 22px;
+    font-size: 8.8px;
+  }
 
- .dot {
+
+
+  .slider-containt h2 {
+    font-size: 16px;
+  }
+
+  .slider-containt p {
+    font-size: 10px;
+  }
+
+  .carousel {
+    margin-left: 12px;
+  }
+
+  .dot {
     width: 5px;
     height: 5px;
   }
+
   .dot.active {
     width: 30px;
     height: 5px;
@@ -559,198 +626,190 @@ body {
 
 
 
-    /* carousel section end */
+  /* carousel section end */
 
-    .passenger-section-left img {
-        display: none;
-        padding: 5px;
-    }
+  .passenger-section-left img {
+    display: none;
+    padding: 5px;
+  }
 
-    #passenger-logo-mobile {
-        display: block;
-    }
+  #passenger-logo-mobile {
+    display: block;
+  }
 
-    .passenger-button-section h2,
-    .driver-button-section h2 {
-        font-size: 10px;
-    }
+  .passenger-button-section h2,
+  .driver-button-section h2 {
+    font-size: 10px;
+  }
 
-    .passenger-button-section .passenger-button {
-        width: 97px;
-        height: 27px;
-        border-radius: 6px;
-        border: 1px solid white;
-        margin-right: 10px;
-    }
-
-
-    #driver-logo-mobile {
-        display: block;
-        width: 100%;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+  .passenger-button-section .passenger-button {
+    width: 97px;
+    height: 27px;
+    border-radius: 6px;
+    border: 1px solid white;
+    margin-right: 10px;
+  }
 
 
-
-    .driver-button-section .passenger-button,
-    .passenger-button-section .driver-button {
-        width: 99px;
-        height: 27px;
-        border-radius: 6px;
-        border: 1px solid white;
-    }
-
-
-    .passenger-header-containt h2 {
-        margin-top: 20px;
-        margin-bottom: 30px;
-        font-size: 18px;
-    }
+  #driver-logo-mobile {
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 
 
 
-    #passenger-multi-key .icon-manager {
-        height: 32px;
-        width: 32px;
-        border-radius: 8px;
-        padding-right: 10px;
-        padding-top: 0;
-        /* margin-top: 10px; */
-    }
+  .driver-button-section .passenger-button,
+  .passenger-button-section .driver-button {
+    width: 99px;
+    height: 27px;
+    border-radius: 6px;
+    border: 1px solid white;
+  }
 
 
-    #passenger-multi-key h1 {
-        font-size: 12px;
-        padding-top: 10px;
-        margin: 0;
-    }
-
-    #passenger-multi-key p {
-        font-size: 8px;
-        padding: 0;
-        margin: 0;
-    }
+  .passenger-header-containt h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
 
 
 
-    .driver-button-section .driver-button {
-        width: 99px;
-        height: 27px;
-        border-radius: 6px;
-        border: 1px solid white;
-    }
+  #passenger-multi-key .icon-manager {
+    height: 32px;
+    width: 32px;
+    border-radius: 8px;
+    padding-right: 10px;
+    padding-top: 0;
+    /* margin-top: 10px; */
+  }
 
 
-    #driver-multi-key .icon-manager {
-        height: 32px;
-        width: 32px;
-        border-radius: 8px;
-        padding-right: 10px;
-        padding-top: 0px;
-    }
+  #passenger-multi-key h1 {
+    font-size: 12px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  #passenger-multi-key p {
+    font-size: 8px;
+    padding: 0;
+    margin: 0;
+  }
 
 
-    #driver-multi-key h1 {
-        font-size: 12px;
-        padding: 0;
-        margin: 0;
-    }
 
-    #driver-multi-key p {
-        font-size: 8px;
-        padding: 0;
-        margin: 0;
-    }
-
-    #driver-desktop-view {
-        display: none;
-    }
-
-    #driver-mobile-view {
-        display: block;
-        display: flex;
-    }
-
-    #driver-mobile-view h1 {
-        padding-top: 20px;
-    }
-
-    #driver-mobile-view .icon-manager {
-        height: 31px;
-        width: 31px;
-    }
+  .driver-button-section .driver-button {
+    width: 99px;
+    height: 27px;
+    border-radius: 6px;
+    border: 1px solid white;
+  }
 
 
-    .footer-section .footer-containt {
-        flex-wrap: wrap;
-        text-align: center;
-        justify-items: center;
-        padding-left: 77px;
-        padding-right: 77px;
-    }
-
-    .footer-section .footer-containt>div {
-        flex: 1 0 content;
-    }
+  #driver-multi-key .icon-manager {
+    height: 32px;
+    width: 32px;
+    border-radius: 8px;
+    padding-right: 10px;
+    padding-top: 0px;
+  }
 
 
-    .footer-containt-1 img {
-        width: 60px;
-        height: 22px;
-    }
+  #driver-multi-key h1 {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+  }
 
-    .footer-containt-2 {
-        display: none;
-    }
-
-    .footer-containt div>p,
-    h4 {
-        font-size: 6px;
-    }
-
-    .footer-containt div>i {
-        width: 10px;
-        height: 10px;
-    }
-
-    .social-link i {
-        margin-right: 15px;
-        height: 8.5px;
-        width: 8.5px;
-    }
-
-    .footer-mobile {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-left: 25px;
-    }
-
-    .footer-mobile p {
-        text-align: justify;
-    }
-
-    .footer-containt-4 {
-        gap: 15px;
-    }
-
-    .footer-containt-5 {
-        margin-top: 15px;
-    }
-
-    .footer-section .footer-containt {
-        padding: 50px 60px;
-    }
-
-    .copyright-section {
-        padding: 0px 77px;
-    }
+  #driver-multi-key p {
+    font-size: 8px;
+    padding: 0;
+    margin: 0;
+  }
 
 
-    .copyright-section h4 {
-        text-align: center;
-        padding: 10px;
-    }
+  #driver-mobile-view h1 {
+    padding-top: 20px;
+  }
+
+  #driver-mobile-view .icon-manager {
+    height: 31px;
+    width: 31px;
+  }
+
+
+  .footer-section .footer-containt {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-items: center;
+    padding-left: 77px;
+    padding-right: 77px;
+  }
+
+  .footer-section .footer-containt>div {
+    flex: 1 0 content;
+  }
+
+
+  .footer-containt-1 img {
+    width: 60px;
+    height: 22px;
+  }
+
+  .footer-containt-2 {
+    display: none;
+  }
+
+  .footer-containt div>p,
+  h4 {
+    font-size: 6px;
+  }
+
+  .footer-containt div>i {
+    width: 10px;
+    height: 10px;
+  }
+
+  .social-link i {
+    margin-right: 15px;
+    height: 8.5px;
+    width: 8.5px;
+  }
+
+  .footer-mobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px;
+  }
+
+  .footer-mobile p {
+    text-align: justify;
+  }
+
+  .footer-containt-4 {
+    gap: 15px;
+  }
+
+  .footer-containt-5 {
+    margin-top: 15px;
+  }
+
+  .footer-section .footer-containt {
+    padding: 50px 60px;
+  }
+
+  .copyright-section {
+    padding: 0px 77px;
+  }
+
+
+  .copyright-section h4 {
+    text-align: center;
+    padding: 10px;
+  }
 
 }
